@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+:root {
+  --zinc-950: #09090b;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: #ffffff;
+  color: var(--zinc-950);
+  scroll-behavior: smooth;
+}
+
+.logo-text {
+  font-family: 'Courier Prime', monospace;
+  font-weight: 700;
+  letter-spacing: -0.04em;
+}
+
+.grid-motif {
+  background-image: radial-gradient(#d4d4d8 0.75px, transparent 0.75px);
+  background-size: 30px 30px;
+}
+
+@keyframes indicatorPulse {
+
+  0%,
+  100% {
+    opacity: 1;
+    fill: #71717a;
+  }
+
+  50% {
+    opacity: 0.2;
+    fill: #d4d4d8;
+  }
+}
+
+.logo-indicator {
+  animation: indicatorPulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+  will-change: opacity, fill;
+}
+
+.section-padding {
+  padding: 10rem 0;
+}
+
+@media (max-width: 768px) {
+  .section-padding {
+    padding: 6rem 0;
+  }
+}

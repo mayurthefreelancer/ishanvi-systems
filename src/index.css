@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-white text-zinc-950 antialiased selection:bg-zinc-900 selection:text-white;
+    font-feature-settings: "ss01", "ss02", "cv01", "cv11";
+  }
+}
+
+@keyframes indicatorPulse {
+  0%, 100% { opacity: 1; fill: #71717a; }
+  50% { opacity: 0.2; fill: #d4d4d8; }
+}
+
+.logo-indicator {
+  animation: indicatorPulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+.grid-motif {
+  background-image: radial-gradient(#d4d4d8 0.75px, transparent 0.75px);
+  background-size: 30px 30px;
+}
