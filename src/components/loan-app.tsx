@@ -108,7 +108,7 @@ const compData = [
   { name: "Your Actual Plan", interest: Math.round(totIntActual), principal: 4150000 },
 ];
 
-export default function App() {
+export default function LoanApp() {
   const [tab, setTab] = useState("overview");
   const [mounted, setMounted] = useState(false);
 
